@@ -5,9 +5,10 @@ import StackGrid from "react-stack-grid";
 
 export function GridList({ data }) {
   const { Meta } = Card;
+
   return (
     <div className="GridContainer">
-      <StackGrid columnWidth={350} >
+      <StackGrid columnWidth={350} onInitialized={(node) => (this.node = node)}>
         {data.map((item, index) => {
           return (
             <div key={index}>

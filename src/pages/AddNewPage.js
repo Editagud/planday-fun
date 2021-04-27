@@ -13,7 +13,6 @@ const tailLayout = {
   wrapperCol: { offset: 8, span: 16 },
 };
 
-
 export function AddNewPage({ onSuccess }) {
   const [loading, setLoading] = React.useState(false);
   const [image, setImage] = React.useState("");
@@ -50,6 +49,7 @@ export function AddNewPage({ onSuccess }) {
   return (
     <div>
       <Breadcrumb style={{ margin: "16px 0" }}>
+        <Breadcrumb.Item>Eddie's app</Breadcrumb.Item>
         <Breadcrumb.Item>Add new</Breadcrumb.Item>
       </Breadcrumb>
 

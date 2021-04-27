@@ -8,7 +8,7 @@ import Data from "./data.json";
 import { usePagination } from "react-use-pagination";
 import "antd/dist/antd.css";
 import { Layout, Menu } from "antd";
-import { PlusCircleOutlined, StarOutlined, HomeOutlined } from "@ant-design/icons";
+import { PlusCircleOutlined, StarOutlined, HomeOutlined , GithubOutlined } from "@ant-design/icons";
 
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
@@ -55,7 +55,11 @@ const App = () => {
           <Header
             className="site-layout-background"
             style={{ padding: 0 }}
-          ></Header>
+          >
+              <div style={{display: "flex", justifyContent: "flex-end"}}>
+              <a href="https://github.com/Editagud/planday-fun" target="_blank"><GithubOutlined style={{color: "white", fontSize: "36px", margin: "0.5em"}}/></a>
+            </div>
+               </Header>
           <Content style={{ margin: "0 16px" }}>
             <div
               className="site-layout-background"

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { SearchOutlined  } from "@ant-design/icons";
+import { SearchOutlined } from "@ant-design/icons";
 
 export function Search({ onChange, placeholder, data }) {
   const [searchTerm, setSearchTerm] = React.useState("");
@@ -14,9 +14,7 @@ export function Search({ onChange, placeholder, data }) {
   }, [searchTerm]);
   return (
     <div className="Search">
-      <span className="SearchSpan">
-      
-      </span>
+      <span className="SearchSpan"></span>
       <input
         className="SearchInput"
         type="text"

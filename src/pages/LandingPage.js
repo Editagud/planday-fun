@@ -31,14 +31,14 @@ export function LandingPage({ data }) {
     startIndex,
     endIndex,
   } = usePagination({
-    totalItems: searchResults.length,
-    initialPageSize: 5,
-    initialPage: 1,
+    totalItems: searchResults.length + 1,
+    initialPageSize: 6,
   });
 
   return (
     <div>
       <Breadcrumb style={{ margin: "16px 0" }}>
+        <Breadcrumb.Item>Eddie's app</Breadcrumb.Item>
         <Breadcrumb.Item>List</Breadcrumb.Item>
       </Breadcrumb>
 
@@ -70,7 +70,7 @@ export function LandingPage({ data }) {
             Previous
           </button>
           <span>
-            Current: {currentPage} of {totalPages}
+            Current: {currentPage + 1} of {totalPages}
           </span>
           <button onClick={setNextPage} disabled={!nextEnabled}>
             Next
