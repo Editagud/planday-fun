@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  .GridContainer {
+    margin-top: 2em;
+  }
+  
+  .grid-list img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 2px 16px var(--shadow);
+  }
+  .Search {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+  }
+  .SearchSpan {
+    width: 5%;
+    border: 1px solid #001529;
+    background: #001529;
+    padding-top: 4px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px 0 0 5px;
+    font-size: 20px;
+  }
+  .SearchInput {
+    width: 85%;
+    border: 3px solid #001529;
+    border-left: none;
+    padding: 5px;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+  }
+  .FormWrapper {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .Pagination {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+  }
+  .Pagination button {
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+  }
+  .Hero img {
+    width: 100%;
+  }
+  
